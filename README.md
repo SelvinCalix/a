@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería Estilo Tren</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    margin: 0;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .train-gallery {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    border-top: 6px solid #333;
+    border-bottom: 6px solid #333;
+    padding: 20px 0;
+  }
+  
+  .track {
+    display: flex;
+    width: max-content;
+    animation: moveTrain 25s linear infinite;
+  }
+  
+  .track img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .track img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #fff;
+  }
+  
+  /* Movimiento del tren */
+  @keyframes moveTrain {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+</style>
+<body>
+  <div class="train-gallery">
+    <div class="track">
+      <!-- Repetimos imágenes para lograr loop fluido -->
+      <img src="1.png" alt="1">
+      <img src="2.png" alt="2">
+      <img src="3.png" alt="3">
+      <img src="4.png" alt="4">
+      <img src="5.png" alt="5">
+      <img src="6.png" alt="6">
+      <img src="7.png" alt="7">
+      <img src="8.png" alt="8">
+      <img src="12.png" alt="12">
+      <img src="13.png" alt="13">
+      <img src="1.png" alt="1">
+      <img src="2.png" alt="2">
+      <img src="3.png" alt="3">
+      <img src="4.png" alt="4">
+      <img src="5.png" alt="5">
+      <img src="6.png" alt="6">
+      <img src="7.png" alt="7">
+      <img src="8.png" alt="8">
+      <img src="12.png" alt="12">
+      <img src="13.png" alt="13">
+      
+    </div>
+  </div>
+</body>
+</html>
